@@ -1,5 +1,4 @@
 FROM phusion/baseimage
-
 MAINTAINER Toshihide Hara <keru.work@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
