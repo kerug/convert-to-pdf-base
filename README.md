@@ -8,8 +8,3 @@
 - pdftk
 - node v0.12
 - npm packages: mongodb, aws-sdk
-
-
-### References
-
-- [IPA Font License Agreement v1.0](http://ipafont.ipa.go.jp/ipa_font_license_v1.html)
