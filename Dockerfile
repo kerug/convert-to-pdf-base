@@ -37,4 +37,4 @@ RUN apt-get update \
 && curl -sL https://deb.nodesource.com/setup_0.12 | bash - \
 && apt-get install -y nodejs \
 && apt-get clean \
-&& rm -f ~/.node-gyp/ && npm install -g node-gyp && node-gyp install
+&& rm -rf ~/.node-gyp/ || true && npm install -g node-gyp && node-gyp install
