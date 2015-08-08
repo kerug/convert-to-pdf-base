@@ -14,8 +14,8 @@ WORKDIR $WORKDIR
 COPY IPAfont00303.zip $WORKDIR/
 COPY IPAexfont00201.zip $WORKDIR/
 
-RUN sed -i.bak -e "s%http://archive.ubuntu.com/%http://jp.archive.ubuntu.com/%g" /etc/apt/sources.list \
-&& apt-get update \
+# RUN sed -i.bak -e "s%http://archive.ubuntu.com/%http://jp.archive.ubuntu.com/%g" /etc/apt/sources.list \
+RUN apt-get update \
 && apt-get install -y unzip \
 && unzip IPAfont00303.zip \
 && unzip IPAexfont00201.zip \
