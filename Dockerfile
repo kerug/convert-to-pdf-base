@@ -37,4 +37,4 @@ RUN sed -i.bak -e "s%http://archive.ubuntu.com/%http://jp.archive.ubuntu.com/%g"
 && curl -sL https://deb.nodesource.com/setup_0.12 | bash - \
 && apt-get install -y nodejs \
 && apt-get clean \
-&& npm install aws-sdk mongodb -g
+&& rm -f ~/.node-gyp/ && npm install -g node-gyp && node-gyp install

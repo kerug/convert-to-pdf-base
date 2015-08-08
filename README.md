@@ -7,4 +7,3 @@
 - ppa:libreoffice
 - pdftk
 - node v0.12
-- npm packages: mongodb, aws-sdk
